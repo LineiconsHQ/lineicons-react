@@ -1,6 +1,6 @@
 {
   "name": "lineicons-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types":"dist/types/index.d.ts",
