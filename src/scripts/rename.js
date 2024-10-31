@@ -1,13 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-function renameFilesWithParentDirNameAsPrefix(directoryPath) {
-  // Get the parent directory path
-  const parentDirPath = path.dirname(directoryPath);
-
-  // Extract the parent directory name
-  const parentDirName = path.basename(parentDirPath);
-
+function renameFilesWithCapitalizedNames(directoryPath) {
   // Array to store the renamed filenames
   const renamedFilenames = [];
 
@@ -43,18 +37,13 @@ function renameFilesWithParentDirNameAsPrefix(directoryPath) {
 
           if (stats.isDirectory()) {
             // Recursively rename files in subdirectories
-            renameFilesWithParentDirNameAsPrefix(filePath);
+            renameFilesWithCapitalizedNames(filePath);
           } else {
             // Extract the file extension
             const fileExt = path.extname(filename);
 
-            // Create the new filename with the parent directory name as a prefix
-            const newFilename = `${
-              parentDirName.charAt(0).toUpperCase() + parentDirName.slice(1)
-            }${filename.charAt(0).toUpperCase()}${filename.slice(
-              1,
-              -fileExt.length
-            )}${fileExt}`;
+            // Capitalize the first letter of the filename
+            const newFilename = `${filename.charAt(0).toUpperCase()}${filename.slice(1)}`;
 
             // Get the full path of the new file
             const newFilePath = path.join(directoryPath, newFilename);
@@ -91,4 +80,4 @@ function renameFilesWithParentDirNameAsPrefix(directoryPath) {
 }
 
 const directoryPath = path.join(__dirname, "../svgs");
-renameFilesWithParentDirNameAsPrefix(directoryPath);
+renameFilesWithCapitalizedNames(directoryPath);

@@ -1,1 +1,1 @@
-import "../assets/webfonts/lineicons/lineicons.css";
+import "../assets/webfont/lineicons.css";
