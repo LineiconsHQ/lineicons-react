@@ -1,0 +1,16 @@
+# Source files
+src/
+src/icons/
+
+# Build artifacts we don't need
+dist/*.map
+dist/icons/
+
+# Development files
+rollup.config.js
+tsconfig.json
+*.log
+.DS_Store
+
+# Everything else except what's in files array
+*

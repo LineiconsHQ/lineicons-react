@@ -1,0 +1,50 @@
+{
+  "name": "@lineiconshq/react",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "React components for LineIcons - Free and Pro icon library",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "icons",
+    "lineicons",
+    "components",
+    "free",
+    "pro",
+    "premium",
+    "ui"
+  ],
+  "author": "LineIcons",
+  "license": "MIT",
+  "homepage": "https://lineicons.com",
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "@lineiconshq/free-icons": "^0.0.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^19.0.0",
+    "rollup": "^4.9.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^5.3.0",
+    "tslib": "^2.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
