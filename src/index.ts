@@ -9,7 +9,7 @@ export * from '@lineiconshq/free-icons';
 // Note: Pro packages are optional dependencies and will be available if installed
 
 // Utility types
-export type IconStyle = 'stroke' | 'solid' | 'duotone' | 'bulk';
+export type IconStyle = 'stroke' | 'solid' | 'duotone' | 'bulk' | 'outlined';
 export type IconTier = 'free' | 'pro';
 
 // Default export

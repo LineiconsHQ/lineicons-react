@@ -1,6 +1,6 @@
 {
-  "name": "@lineiconshq/react",
-  "version": "0.0.1",
+  "name": "@lineiconshq/react-lineicons",
+  "version": "1.0.1",
   "type": "module",
   "description": "React components for LineIcons - Free and Pro icon library",
   "main": "dist/index.js",

@@ -6,7 +6,7 @@ export interface IconSvgObject {
   jsx: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   path: string;
   tier: 'free' | 'pro';
-  style: 'stroke' | 'solid' | 'duotone' | 'bulk';
+  style: 'stroke' | 'solid' | 'duotone' | 'bulk' | 'outlined';
 }
 
 export interface LineIconProps extends React.SVGProps<SVGSVGElement> {

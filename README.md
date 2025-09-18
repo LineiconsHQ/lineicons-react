@@ -10,7 +10,7 @@ React Components for [Lineicons](https://lineicons.com)
 
 ### Free Icons
 ```bash
-npm install @lineiconshq/react @lineiconshq/free-icons
+npm install @lineiconshq/react-lineicons @lineiconshq/free-icons
 ```
 
 ## Usage
@@ -20,15 +20,15 @@ After installing the package import icon and use anywhere for example
 
 ```tsx
 import React from 'react';
-import { LineIcon } from '@lineiconshq/react';
-import { Home2BulkRounded } from '@lineiconshq/free-icons'
+import { LineIcon } from '@lineiconshq/react-lineicons';
+import { Home2Bulk } from '@lineiconshq/free-icons'
 
 function App() {
   return (
     <div>
       {/* Using the LineIcon wrapper */}
       <LineIcon 
-        icon={Home2BulkRounded} 
+        icon={Home2Bulk} 
         size={24} 
         color="blue" 
         strokeWidth={1.5} //only outlined icons
