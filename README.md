@@ -6,9 +6,10 @@ React Components for [Lineicons](https://lineicons.com)
 
 ### [Explore and Download All 26082+ Icons](https://lineicons.com/)
 
-## Installation 
+## Installation
 
 ### Free Icons
+
 ```bash
 npm install @lineiconshq/react-lineicons @lineiconshq/free-icons
 ```
@@ -16,23 +17,28 @@ npm install @lineiconshq/react-lineicons @lineiconshq/free-icons
 ## Usage
 
 ### Basic Usage
+
 After installing the package import icon and use anywhere for example
 
 ```tsx
-import React from 'react';
-import { LineIcon } from '@lineiconshq/react-lineicons';
-import { Home2Bulk } from '@lineiconshq/free-icons'
+import React from "react";
+import { LineIcon } from "@lineiconshq/react-lineicons";
+import {
+  Home2Outlined,
+  CloudBolt1Bulk,
+  CloudBolt1Outlined,
+  CloudBolt1Duotone,
+  CloudBolt1Solid,
+} from "@lineiconshq/free-icons";
 
 function App() {
   return (
     <div>
-      {/* Using the LineIcon wrapper */}
-      <LineIcon 
-        icon={Home2Bulk} 
-        size={24} 
-        color="blue" 
-        strokeWidth={1.5} //only outlined icons
-      />
+      <LineIcon icon={Home2Outlined} size={24} color="blue" strokeWidth={1.5} />
+      <LineIcon icon={CloudBolt1Bulk} size={40} color="orange" />
+      <LineIcon icon={CloudBolt1Outlined} size={50} color="blue" />
+      <LineIcon icon={CloudBolt1Duotone} size={30} color="green" />
+      <LineIcon icon={CloudBolt1Solid} size={24} strokeWidth={1.5} />
     </div>
   );
 }
@@ -55,6 +61,7 @@ interface LineIconProps extends React.SVGProps<SVGSVGElement> {
 ```
 
 **Props:**
+
 - `icon` - The icon component to render
 - `size` - Size of the icon (default: 24)
 - `color` - Color of the icon (default: 'currentColor')

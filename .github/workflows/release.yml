@@ -1,0 +1,40 @@
+name: 🚀 LineIcons react release
+
+on:
+  push:
+    branches:
+      - main # Adjust this to your desired branch
+
+jobs:
+  publish:
+    name: 🚀 LineIcons react release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Clear npm cache
+        run: npm cache clean --force
+      - name: Delete node_modules
+        run: rm -rf node_modules
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Pre Build
+        run: npm run pkg:prebuild
+
+      - name: Build
+        run: npm run build
+
+      - name: Publish to npm
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_LINEICONREACT }}
