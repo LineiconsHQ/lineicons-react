@@ -38,7 +38,7 @@ function App() {
       <LineIcon icon={CloudBolt1Bulk} size={40} color="orange" />
       <LineIcon icon={CloudBolt1Outlined} size={50} color="blue" />
       <LineIcon icon={CloudBolt1Duotone} size={30} color="green" />
-      <LineIcon icon={CloudBolt1Solid} size={24} strokeWidth={1.5} />
+      <LineIcon icon={CloudBolt1Solid} size={24} />
     </div>
   );
 }
