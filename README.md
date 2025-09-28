@@ -45,7 +45,6 @@ export default App;
 
 ### Lineicons
 
-### `<LineIcons />`
 
 ```tsx
 interface LineiconsProps extends React.SVGProps<SVGSVGElement> {
