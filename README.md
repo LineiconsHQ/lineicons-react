@@ -29,11 +29,11 @@ import {
 function App() {
   return (
     <div>
-      <LineIcon icon={Home2Outlined} size={24} color="blue" strokeWidth={1.5} />
-      <LineIcon icon={CloudBolt1Bulk} size={40} color="orange" />
-      <LineIcon icon={CloudBolt1Outlined} size={50} color="blue" />
-      <LineIcon icon={CloudBolt1Duotone} size={30} color="green" />
-      <LineIcon icon={CloudBolt1Solid} size={24} />
+      <LineIcons icon={Home2Outlined} size={24} color="blue" strokeWidth={1.5} />
+      <LineIcons icon={CloudBolt1Bulk} size={40} color="orange" />
+      <LineIcons icon={CloudBolt1Outlined} size={50} color="blue" />
+      <LineIcons icon={CloudBolt1Duotone} size={30} color="green" />
+      <LineIcons icon={CloudBolt1Solid} size={24} />
     </div>
   );
 }
@@ -85,9 +85,5 @@ Fully typed — includes definitions for the `LineIcon` component and all icon e
 
 * [📖 Documentation](https://lineicons.com/docs)
 * [💬 Support](https://lineicons.com/support)
-* [🎨 Figma Plugin](https://www.figma.com/community/plugin/1217738304122072948/Lineicons)
+* [🔌 Figma Plugin](https://www.figma.com/community/plugin/1217738304122072948/Lineicons)
 * [📁 Figma Source](https://www.figma.com/community/file/1198194066179400874)
-
----
-
-Would you like me to make this **even shorter** (just install + usage) for a minimal NPM readme, or keep this **feature-complete** for GitHub?
