@@ -71,7 +71,7 @@ All other valid SVG props are also supported.
 
 ## TypeScript Support
 
-Fully typed — includes definitions for the `LineIcon` component and all icon exports.
+Fully typed — includes definitions for the `LineIcons` component and all icon exports.
 
 ---
 
