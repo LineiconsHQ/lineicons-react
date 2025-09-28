@@ -1,24 +1,19 @@
-# Lineicons React - Essential UI Icons for React
+# Lineicons React — Essential UI Icons for React
 
-Create stunning designs with 26082+ Free and Premium Icons. Find the perfect style and category to match your project’s unique needs.
+Lightweight React components for [Lineicons](https://lineicons.com).
+Easily add scalable SVG icons to your React projects with simple props for size, color, and stroke.
 
-React Components for [Lineicons](https://lineicons.com)
-
-### [Explore and Download All 26082+ Icons](https://lineicons.com/)
+---
 
 ## Installation
-
-### Free Icons
 
 ```bash
 npm install @lineiconshq/react-lineicons @lineiconshq/free-icons
 ```
 
+---
+
 ## Usage
-
-### Basic Usage
-
-After installing the package import icon and use anywhere for example
 
 ```tsx
 import React from "react";
@@ -42,13 +37,15 @@ function App() {
     </div>
   );
 }
+
+export default App;
 ```
 
-## API Reference
+---
 
 ### Lineicons
 
-Main component for rendering icons.
+### `<LineIcons />`
 
 ```tsx
 interface LineiconsProps extends React.SVGProps<SVGSVGElement> {
@@ -60,30 +57,33 @@ interface LineiconsProps extends React.SVGProps<SVGSVGElement> {
 }
 ```
 
-**Props:**
+| Prop          | Type                                           | Default        | Description                               |
+| ------------- | ---------------------------------------------- | -------------- | ----------------------------------------- |
+| `icon`        | `React.ComponentType<SVGProps<SVGSVGElement>>` | — *(required)* | The icon component to render.             |
+| `size`        | `number \| string`                             | `24`           | Icon size in pixels or any CSS size unit. |
+| `color`       | `string`                                       | `currentColor` | Icon color.                               |
+| `strokeWidth` | `number`                                       | `1.5`          | Stroke width for outlined icons.          |
+| `className`   | `string`                                       | —              | Optional CSS class.                       |
 
-- `icon` - The icon component to render
-- `size` - Size of the icon (default: 24)
-- `color` - Color of the icon (default: 'currentColor')
-- `strokeWidth` - Stroke width for stroke icons (default: 1.5)
-- `className` - CSS class name
-- All other SVG props are passed through
+All other valid SVG props are also supported.
+
+---
 
 ## TypeScript Support
 
-Full TypeScript support is included with type definitions for all components and icons.
+Fully typed — includes definitions for the `LineIcons` component and all icon exports.
+
+---
 
 ## License
 
-- **Free Icons**: MIT License
+* **Free Icons:** [MIT License](https://opensource.org/licenses/MIT)
 
-## Support
+---
 
-- [Documentation](https://lineicons.com/docs)
-- [Support](https://lineicons.com/support)
+## Links
 
-[![lineicons-site](https://content.lineicons.com/wp-content/uploads/2023/01/lineicons-4.png)](https://lineicons.com/)
-
-### [Lineicons Figma Plugin](https://www.figma.com/community/plugin/1217738304122072948/Lineicons)
-
-### [Lineicons - Figma Source](https://www.figma.com/community/file/1198194066179400874)
+* [📖 Documentation](https://lineicons.com/docs)
+* [💬 Support](https://lineicons.com/support)
+* [🔌 Figma Plugin](https://www.figma.com/community/plugin/1217738304122072948/Lineicons)
+* [📁 Figma Source](https://www.figma.com/community/file/1198194066179400874)
