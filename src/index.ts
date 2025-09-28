@@ -1,5 +1,5 @@
 // Main exports
-export { LineIcon, type LineIconProps } from './LineIcon';
+export { Lineicons, type LineiconsProps } from './LineIcon';
 
 // Re-export free icons
 export * from '@lineiconshq/free-icons';

@@ -11,7 +11,7 @@ export interface IconData {
   hasStrokeWidth: boolean;
 }
 
-export interface LineIconProps extends Omit<React.SVGProps<SVGSVGElement>, 'icon'> {
+export interface LineiconsProps extends Omit<React.SVGProps<SVGSVGElement>, 'icon'> {
   icon: IconData;
   size?: number | string;
   color?: string;
@@ -19,7 +19,7 @@ export interface LineIconProps extends Omit<React.SVGProps<SVGSVGElement>, 'icon
 }
 
 
-export const LineIcon: React.FC<LineIconProps> = ({
+export const Lineicons: React.FC<LineiconsProps> = ({
   icon,
   size = 24,
   color = 'currentColor',
@@ -53,7 +53,7 @@ export const LineIcon: React.FC<LineIconProps> = ({
     width: size,
     height: size,
     viewBox: icon.viewBox,
-    fill: icon.defaultFill || 'none',  // restore fill if present
+    fill: icon.defaultFill || 'none',  
     stroke: icon.defaultStroke || 'none',
     className,
     ...otherProps,
@@ -76,4 +76,4 @@ export const LineIcon: React.FC<LineIconProps> = ({
   );
 };
 
-export default LineIcon;
+export default Lineicons;
